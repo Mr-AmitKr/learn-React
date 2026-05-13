@@ -10,14 +10,17 @@ body,
 #root{
   height: 100%;
   width: 100%;
+  color: black;
 }
 
-.parent{
-  height: 100vh;
+.parent{  
+  height: auto;
   width: 100%;
   background-color: #111;
   padding: 30px;
-  
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .card{
@@ -30,12 +33,13 @@ body,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 .card .top{
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
+  margin-bottom: 30px;
 }
 .top img{
   height: 42px;
@@ -59,7 +63,7 @@ body,
   margin-top: -50px;
   font-size: 17px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .center h3 span{
   font-size: 9px;
